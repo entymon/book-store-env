@@ -6,7 +6,7 @@
 
 # Setup new project
 
-### Setup new SF8 project (Only)
+### Setup new SF project (Only)
 1. Open `docker/server/Dockerfile` file and replace `{GITHUB_EMAIL_ADDRESS}` and `{GITHUB_USERNAME}` with appropriate data. Uncomment the lines.
 2. Run command: `docker-compose exec server bash` to get in to the server
 3. Remember to remove old project from `/var/www/html` or run locally `rm -rf codebase/*`
