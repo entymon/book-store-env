@@ -1,2 +1,6 @@
-/.env
-/codebase
+.env
+# exclude everything
+codebase/*
+
+# exception to the rule
+!codebase/.gitkeep 
