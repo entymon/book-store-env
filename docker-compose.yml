@@ -2,6 +2,22 @@ networks:
   book_store_net:
 
 services:
+  ui:
+    build:
+      context: .
+      dockerfile: ./docker/ui/Dockerfile
+    environment:
+      NODE_ENV: production
+    container_name: '${APP_NAME}-ui'
+    ports:
+      - '${APP_UI_PORT}:8080'
+    working_dir: /app
+    volumes:
+      - ./bookstore:/app
+      - /app/node_modules
+    networks:
+      - book_store_net
+
   server:
     build:
       context: .

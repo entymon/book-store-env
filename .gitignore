@@ -1,6 +1,8 @@
 .env
 # exclude everything
 codebase/*
+bookstore/*
 
 # exception to the rule
 !codebase/.gitkeep 
+!bookstore/.gitkeep 
