@@ -1,8 +1,10 @@
 FROM php:8.3-apache
 
 RUN a2enmod rewrite
+RUN a2enmod headers
 
-RUN apt-get update && apt-get install -y git unzip zip
+# Install necessary build tools
+RUN apt-get update && apt-get install -y git unzip zip gcc make autoconf
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 

@@ -16,6 +16,11 @@
 9. Run `docker-compose up` in the root of project
 
 
+# Debug on servers:
+1. Run `docker exec -it book_store-ui sh` for UI
+2. Run `docker exec -it book_store-server sh` for SF
+
+
 # Setup new project (IGNORE )
 
 ### Setup new SF project (Only)

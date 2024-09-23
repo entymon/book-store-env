@@ -3,6 +3,7 @@ networks:
 
 services:
   ui:
+    image: bookstore_ui
     build:
       context: .
       dockerfile: ./docker/ui/Dockerfile
