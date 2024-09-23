@@ -6,3 +6,5 @@ bookstore/*
 # exception to the rule
 !codebase/.gitkeep 
 !bookstore/.gitkeep 
+
+.DS_Store
